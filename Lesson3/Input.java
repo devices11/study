@@ -1,5 +1,6 @@
 package Lesson3;
 
+import java.util.InputMismatchException;
 import java.util.Scanner;
 
 public class Input {
@@ -23,12 +24,12 @@ public class Input {
         this.inputFirstNumber = inputFirstNumber;
     }
 
-    private double inputFirstNumber(Scanner scanner){
+    private double inputFirstNumber (Scanner scanner){
         setFirstNumber(scanner.nextDouble());
         return inputFirstNumber;
     }
 
-    private void setInputNextNumber(double inputNextNumber) {
+    private void setInputNextNumber(double inputNextNumber){
         this.inputNextNumber = inputNextNumber;
     }
 
@@ -55,5 +56,4 @@ public class Input {
         inputAction(scanner);
         return this;
     }
-
 }
